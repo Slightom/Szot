@@ -9,7 +9,7 @@ namespace Szot.Models
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
-        public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false) { }
+        public ApplicationDbContext() : base("SzotDB", throwIfV1Schema: false) { }
 
 
         public DbSet<Author> Authors { get; set; }
