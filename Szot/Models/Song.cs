@@ -13,18 +13,16 @@ namespace Szot.Models
         [Required]
         public string Title { get; set; }
 
-        [Required]
-        public int AuthorID { get; set; }
-
-        public int? BackingID { get; set; }
 
         public bool WithBacking { get; set; }
+
+        public string Info { get; set; }
 
         public Enums.LanguageEnum TextLanguage { get; set; }
 
 
         public virtual ICollection<SongCategory> SongCategories { get; set; }
-        public virtual Author Author { get; set; }
-        public virtual Backing Backing { get; set; }
+        public virtual ICollection<SongAuthor> SongAuthors { get; set; }
+        public virtual ICollection<Backing> Backings { get; set; }
     }
 }

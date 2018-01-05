@@ -15,7 +15,7 @@ namespace Szot.Models
         public Enums.CountryEnum Country { get; set; }
 
 
-        public virtual ICollection<Song> Songs { get; set; }
+        public virtual ICollection<SongAuthor> SongAuthors { get; set; }
 
     }
 }

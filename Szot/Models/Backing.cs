@@ -10,6 +10,8 @@ namespace Szot.Models
     {
         public int BackingID { get; set; }
 
+        public int SongID { get; set; }
+
         [Required]
         public string Name { get; set; }
 
@@ -19,8 +21,8 @@ namespace Szot.Models
         [Required]
         public string path { get; set; }
 
+        public bool MainBacking { get; set; }
 
-
-        public virtual ICollection<Song> Songs { get; set; }
+        public virtual Song Song { get; set; }
     }
 }

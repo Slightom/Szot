@@ -20,6 +20,7 @@ namespace Szot.Models
         public DbSet<PlacePhoto> PlacePhotos { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Song> Songs { get; set; }
+        public DbSet<SongAuthor> SongAuthors { get; set; }
         public DbSet<SongCategory> SongCategories { get; set; }
 
 
